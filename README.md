@@ -1,6 +1,8 @@
 # Adventures with Bots!
 
-This is a tale of adventures writing bots. There is lots of text ahead because it's a story/blog. Maybe not the best tutorial or example out there since it is written in a form of discussion. Do you have suggestions? Did I miss something? Do you have a better idea? open an [issue](https://github.com/parthpower/adventures-with-bots/issues)! It'd be great to discuss over there!
+This is a tale of adventures writing bots. There is lots of text ahead because it's a story/blog. Maybe not the best tutorial or example out there. 
+
+Do you have suggestions? Did I miss something? Do you have better ideas? open an [issue](https://github.com/parthpower/adventures-with-bots/issues)!
 
 ## Why? Why not!
 
@@ -33,11 +35,11 @@ Back to slack, Since slack has this `/slash` commands, I didn't bother creating 
 
 It took `ngrok` + `flask` for the slack slash command handler. Except for the complexity of exposing a local webserver, the slack bot isn't any harder than the discord bot. Actually, easier since it doesn't require a slack specific library, and is literally an HTTP POST handler that responds with some JSON.
 
-Exposing a webserver to public internet **safely** isn't free or simple or easy. I am not a professional in this area so let me know if I'm wrong about it in the [issues](https://github.com/parthpower/adventures-with-bots/issues) or [@parthpower](https://twitter.com/parthpower)
+Exposing a webserver to public internet **safely** isn't free or simple or easy. I am not a professional on edge deployment or whatever it is called, let me know if I'm wrong! [issues](https://github.com/parthpower/adventures-with-bots/issues) or [@parthpower](https://twitter.com/parthpower)
 
 Free options are,
 1. Open port 80, 443 on your router, add some DDNS, get certs from LetsEncrypt, try to add some security, and hope nobody attacks.
-2. Run-on free tier instances. e.g. GCP/OpenShift etc
+2. Run-on free tier instances. e.g. GCP/OpenShift/Heroku etc
 3. Trust `ngrok` with your "secret" slack data.
 
 Having said that, since the `discord` bot didn't require any open ports, it feels a lot easier than slack bots! I mean, I can even run that form my non-rooted phone!  
