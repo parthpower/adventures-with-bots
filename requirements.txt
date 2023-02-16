@@ -17,5 +17,5 @@ slackclient==2.8.2
 slackeventsapi==2.2.1
 typing-extensions==3.7.4.3
 wakeonlan==1.1.6
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 yarl==1.5.1
